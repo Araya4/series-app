@@ -1,0 +1,66 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.btn-info{
+    background-color: white;
+    border: white;
+    font-weight: bold;
+}
+button:hover img{
+    margin-top: 10px;
+    transform: scale(1.6);
+    background-color: rgb(240, 250, 250);
+    border: white;
+}
+#kovoCatchUp{
+    margin-top: 1.4%;
+}
+  ul{
+    list-style-type: none;
+    margin-bottom: 0%;
+    margin-top: 0.5%;
+  }
+  a{
+    margin-top: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .btn-group {
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+}
+.btn-primary, 
+.btn-dark,
+.btn-danger,
+.btn-secondary,
+.btn-warning{
+    font-weight: bold;
+}
+.btn-danger{
+    background-color: crimson;
+
+}
+.btn-warning{
+    color: rgb(208, 177, 0);
+    background-color: beige;
+    border-color: beige;
+
+}
+.btn-secondary{
+    background-color: rgb(94, 249, 197);
+    border-color: rgb(94, 249, 197);
+    color: black;
+}
