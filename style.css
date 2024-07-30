@@ -64,3 +64,8 @@ button:hover img{
     border-color: rgb(94, 249, 197);
     color: black;
 }
+
+.container {
+    display: flex;
+    gap: 10px; /* Optional: space between the divs */
+}
