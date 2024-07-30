@@ -6,100 +6,55 @@
     <title>TV Series KR | IND</title>
     <link rel="icon" type="image/png" href="https://i.ibb.co/rdwkgNJ/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-            .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 62.50%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-          }
-          .video-container iframe,
-          .video-container object,
-          .video-container embed {
-            position: absolute;
-            top: 1%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
-        .btn-primary{
-            background-color: white;
-            border: white;
-        }
-        button:hover img{
-            margin-top: 10px;
-            transform: scale(1.6);
-            background-color: rgb(240, 250, 250);
-            border: white;
-        }
-          ul{
-            list-style-type: none;
-            margin-bottom: 0%;
-            margin-top: 0.5%;
-          }
-          a{
-            margin-top: 1%;
-            margin-left: 0%;
-            margin-right: 0%;
-          }
-          iframe{
-            padding-top: 1%;
-            padding-left: 3%;
-          }
-            #kovoCatchUp{
-            margin-top: 1.4%;
-        }
-          .btn-group {
-            flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         <ul>
             <li class="btn-group" role="group">
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#THA">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#THA">
                     <img height="64" src="https://i.ibb.co/09Jfp0M/android-chrome-192x192.png" alt="Thai Flag"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#chompoo">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#chompoo">
                     <img height="64" width="64" src="https://i.ibb.co/HXN0T2N/android-chrome-192x192.png" alt="Pornpun"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#kovoCatchUp">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#kovoCatchUp">
                     <img height="64" width="60" src="img_KOVO_round.png" alt="Pornpun@KOVO"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#buddha">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#buddha">
                     <img width="64" height="64" src="https://cdn.pixabay.com/photo/2023/06/21/06/51/buddha-8078673_960_720.jpg" alt="Buddha"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#sangdo">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#sangdo">
                     <img width="60" height="64" src="https://i.ibb.co/fk3WVyK/Sangdo-Merchants-of-Joseon.jpg" alt="Sangdo"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#DeeS2">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#DeeS2">
                     <img width="48" height="64" src="https://i.ibb.co/HGLy3Kd/Amazing-Detective-Di-Renjie-2.jpg" alt="Amazing-Detective-Di-Renjie-2"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#DeeS3">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#DeeS3">
                     <img width="48" height="64" src="https://i.ibb.co/qW14THn/Amazing-Detective-Di-Renjie-3.jpg" alt="Amazing-Detective-Di-Renjie-3"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#DeeMovie">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#DeeMovie">
                     <img height="64" src="https://i.ibb.co/ZgBhyFy/Dee-Detective.jpg" alt=""></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#jumong">
-                    <img height="64" src="https://i.ibb.co/LNSjLmY/jumong.jpg" alt="jumong"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#yisan">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#jumong">
+                    <img height="64" src="https://i.ibb.co/LNSjLmY/jumong.jpg" alt="jumong" border="0"></button>
+                <button class="btn btn-info" data-toggle="collapse" data-target="#yisan">
                     <img height="64" src="https://i.ibb.co/q9DccPD/yi-san.jpg" alt="yisan" border="0"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#kimsuro">
+                <button class="btn btn-info" data-toggle="collapse" data-target="#kimsuro">
                     <img height="64" src="https://i.ibb.co/DLWLrq2/kimsuro.jpg" alt="kimsuro"></button>
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#hurjun">
-                    <img height="64" src="https://i.ibb.co/pLYzVB4/Hur-Jun-1999.jpg" alt="Hur-Jun-1999"></button>
+                <button class="btn btn-info" data-toggle="collapse" data-target="#hurjun">
+                    <img height="64" src="https://i.ibb.co/pLYzVB4/Hur-Jun-1999.jpg" alt="Hur-Jun-1999"></button> 
             </li>
             <li class="collapse btn-group" role="group" id="kovoCatchUp">
-                <button class="btn btn-dark" data-toggle="collapse" data-target="#ibk">@KOVO</button>
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#ibk">@KOVO</button>
                 <button class="btn btn-danger disabled" data-toggle="collapse" disabled>Pink</button>
                 <button class="btn btn-danger" data-target="#pink3" data-toggle="collapse">#3</button>
                 <button class="btn btn-danger" data-target="#pink4" data-toggle="collapse">#4</button>
                 <button class="btn btn-danger" data-target="#pink4_5" data-toggle="collapse">#4 {5}</button>
                 <button class="btn btn-danger" data-target="#pink5" data-toggle="collapse">#5</button>
-                <button class="btn btn-danger disabled" data-toggle="collapse" disabled>AI Pepper</button>
-                <button class="btn btn-danger" data-target="#ai3" data-toggle="collapse">#3</button>
-                <button class="btn btn-danger" data-target="#ai4" data-toggle="collapse">#4</button>
-                <button class="btn btn-danger" data-target="#ai5" data-toggle="collapse">#5</button>
-                <button class="btn btn-danger" data-target="#HiPass4" data-toggle="collapse">HiPass#4</button>
-                <button class="btn btn-danger" data-target="#gs4" data-toggle="collapse">GS#4</button>
-                <button class="btn btn-danger" data-target="#hyun3" data-toggle="collapse">Hyundai#3</button>
-                
+                <button class="btn btn-dark disabled" data-toggle="collapse" disabled>AI Pepper</button>
+                <button class="btn btn-dark" data-target="#ai3" data-toggle="collapse">#3</button>
+                <button class="btn btn-dark" data-target="#ai4" data-toggle="collapse">#4</button>
+                <button class="btn btn-dark" data-target="#ai5" data-toggle="collapse">#5</button>
+                <button class="btn btn-dark" data-target="#HiPass4" data-toggle="collapse">HiPass#4</button>
+                <button class="btn btn-secondary" data-target="#gs4" data-toggle="collapse">GS#4</button>
+                <button class="btn btn-warning" data-target="#hyun3" data-toggle="collapse">Hyundai#3</button>
+                <button class="btn btn-danger disabled" data-toggle="collapse" disabled>Red Spark</button>
+                <button class="btn btn-danger" data-toggle="collapse" data-target="#red2">#2</button>
+                <button class="btn btn-danger" data-toggle="collapse" data-target="#red3">#3</button>               
                 
             </li>
         </ul>
@@ -145,8 +100,10 @@
         <div class="collapse video-container" id="sangdo"><iframe src="https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMvyuz7A2mxL-ZJapu4-RZfb" frameborder="0" allowfullscreen></iframe></div>
         <div class="collapse video-container" id="yisan"><iframe width="960" height="600" src="https://www.youtube.com/embed/videoseries?list=PLOBbhydezQbek3PJDx0tTiexzeMWly2JO" frameborder="0"></iframe></div>
         <div class="collapse video-container" id="kimsuro"><iframe width="960" height="600" src="https://www.youtube.com/embed/videoseries?list=PLv7whYPHSlwQiHrHg3rpxpGFFr2EzhRzV" frameborder="0" allowfullscreen></iframe></div>
-       <div class="collapse video-container" id="hurjun"><iframe width="960" height="600" src="https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMtfO1NYl2UNgdrmwyZ-GfcV" frameborder="0" allowfullscreen></iframe></div>
+        <div class="collapse video-container" id="hurjun"><iframe width="960" height="600" src="https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMtfO1NYl2UNgdrmwyZ-GfcV" frameborder="0" allowfullscreen></iframe></div>
         
+        <div class="collapse video-container" id="red2"><iframe src="https://www.youtube.com/embed/WA4U3rKkf-g" frameborder="0" allowfullscreen></iframe> </div>
+        <div class="collapse video-container" id="red3"><iframe src="https://www.youtube.com/embed/c_aSPtDt1vA" frameborder="0" allowfullscreen></iframe></div>
         <div class="collapse video-container" id="ai5"><iframe src="https://www.youtube.com/embed/srLvKCPpIPc" frameborder="0" allowfullscreen></iframe></div>
         <div class="collapse video-container" id="HiPass4"><iframe src="https://www.youtube.com/embed/sXTcCisAxQc" frameborder="0" allowfullscreen></iframe></div>
         <div class="collapse video-container" id="gs4"><iframe src="https://www.youtube.com/embed/90ORF8ZZKFE" frameborder="0" allowfullscreen></iframe></div>
@@ -156,8 +113,9 @@
         <div class="collapse video-container" id="hyun3"><iframe src="https://www.youtube.com/embed/UFuBcOP5rkQ" frameborder="0" allowfullscreen></iframe></div>
         <div class="collapse video-container" id="ai3"><iframe src="https://www.youtube.com/embed/w6pjaBkfTsM" frameborder="0" allowfullscreen></iframe></div>
         <div class="collapse video-container" id="pink3"><iframe src="https://www.youtube.com/embed/ZOObGQrN2Z4" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="pink5"><iframe src="https://www.youtube.com/embed/HpNXm9jLkmk" frameborder="0" allowfullscreen></iframe></div> 
-    
+        <div class="collapse video-container" id="pink5"><iframe src="https://www.youtube.com/embed/HpNXm9jLkmk" frameborder="0" allowfullscreen></iframe></div>
+
+       
     
     
     
