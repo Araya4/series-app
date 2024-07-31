@@ -69,3 +69,7 @@ button:hover img{
     display: flex;
     gap: 10px; /* Optional: space between the divs */
 }
+
+.dropdown-menu .btn{
+  width: 100%;
+}
