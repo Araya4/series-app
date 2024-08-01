@@ -82,16 +82,23 @@ button:hover img{
 .dropdown .btn img{
   height: 48px;
 }
-li a img{
-  height: 48px;
+.dropdown-menu .btn-light img{
+  height: 54px;
+  width: 50px;
 }
+
 .dropdown-menu .btn-light{
-  color:#fff;
-  width: 40%;
-  background-image: url("thai_flag.png");
-  background-size: cover;
-  background-position: center;
+  color:#800;
+  width: 48%;
   font-family: 'aAstagaDragon', sans-serif; /* Use the font family */
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+}
+span{
+  font-family: "Pridi", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.mit{
+  color:rgb(51, 146, 51);
 }
