@@ -27,6 +27,9 @@
     border: white;
     font-weight: bold;
 }
+.btn-info:hover{
+  background-color: white;
+}
 button:hover img{
     /*margin-top: 10px;
     transform: scale(1.6);*/
@@ -76,16 +79,19 @@ button:hover img{
 .dropdown-menu .btn{
   width: 100%;
 }
+.dropdown-menu .half{
+  width: 48%;
+}
 .dropdown .btn img{
   height: 48px;
 }
-.dropdown-menu .btn-light img{
+.dropdown-menu .sm img{
   height: 54px;
   width: 50px;
+  margin-right: 2%;
 }
-.dropdown-menu .btn-light{
+.dropdown-menu .sm{
   color:#800;
-  width: 48%;
   font-family: 'aAstagaDragon', sans-serif; /* Use the font family */
   font-weight: bold;
   font-size: 20px;
