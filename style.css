@@ -2,6 +2,8 @@
   font-family: 'aAstagaDragon'; /* Name your font family */
   src: url('aAstagaDragon.ttf'); /* Locate the .ttf file within your directory*/
 }
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
 
 .video-container {
     position: relative;
@@ -15,9 +17,9 @@
   .video-container embed {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left: 5%;
+    width: 95%;
+    height: 95%;
   }
 
 .btn-info{
@@ -26,8 +28,8 @@
     font-weight: bold;
 }
 button:hover img{
-  /*  margin-top: 10px;
-    transform: scale(1.6); */
+    /*margin-top: 10px;
+    transform: scale(1.6);*/
     background-color: rgb(240, 250, 250);
     border: white;
 }
@@ -54,10 +56,6 @@ button:hover img{
 .btn-warning{
     font-weight: bold;
 }
-.btn-danger{
-    background-color: crimson;
-
-}
 .btn-warning{
     color: rgb(208, 177, 0);
     background-color: beige;
@@ -78,7 +76,6 @@ button:hover img{
 .dropdown-menu .btn{
   width: 100%;
 }
-
 .dropdown .btn img{
   height: 48px;
 }
@@ -86,7 +83,6 @@ button:hover img{
   height: 54px;
   width: 50px;
 }
-
 .dropdown-menu .btn-light{
   color:#800;
   width: 48%;
@@ -94,6 +90,7 @@ button:hover img{
   font-weight: bold;
   font-size: 20px;
 }
+
 span{
   font-family: "Pridi", serif;
   font-weight: 600;
