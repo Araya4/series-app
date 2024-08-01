@@ -35,6 +35,11 @@ li .btn:hover img{
     background-color: rgb(248,249, 250);
     border: white;
 }
+.dropdown-menu {
+  min-width: 180px;
+  max-width: 220px;
+}
+
 #kovoCatchUp{
     margin-top: 1.4%;
 }
