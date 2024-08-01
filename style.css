@@ -3,13 +3,6 @@
   src: url('aAstagaDragon.ttf'); /* Locate the .ttf file within your directory*/
 }
 
-.btn-light {
-  background-color: white;
-  font-family: 'aAstagaDragon', sans-serif; /* Use the font family */
-  font-weight: bold;
-  font-size: 24px;
-}
-
 .video-container {
     position: relative;
     width: 100%;
@@ -87,13 +80,18 @@ button:hover img{
 }
 
 .dropdown .btn img{
-  height: 40px;
+  height: 60px;
+}
+li a img{
+  height: 56px;
 }
 .dropdown-menu .btn-light{
-  color:darkgray;
+  color:#fff;
   width: 48%;
-}
-.dropdown-menu .btn-light{
-  color:maroon;
-  width: 48%;
+  background-image: url("thai_flag.png");
+  background-size: cover;
+  background-position: center;
+  font-family: 'aAstagaDragon', sans-serif; /* Use the font family */
+  font-weight: bold;
+  font-size: 24px;
 }
