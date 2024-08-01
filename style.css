@@ -3,7 +3,7 @@
   src: url('aAstagaDragon.ttf'); /* Locate the .ttf file within your directory*/
 }
 
-.btn-danger {
+.btn-light {
   background-color: white;
   font-family: 'aAstagaDragon', sans-serif; /* Use the font family */
   font-weight: bold;
