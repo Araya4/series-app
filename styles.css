@@ -25,8 +25,13 @@
 
 }
 .dropdown-menu .btn:hover img{
-    /*margin-top: 10px;*/
     transform: scale(1.6);
+    background-color: rgb(248, 249, 250);
+    border: rgb(248, 249, 250);
+  }
+
+.dropdown-menu .textControl:hover img{
+    transform: scale(1.0);
     background-color: rgb(248, 249, 250);
     border: rgb(248, 249, 250);
   }
