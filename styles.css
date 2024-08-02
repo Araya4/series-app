@@ -30,6 +30,8 @@
     border: rgb(248, 249, 250);
   }
 
+i{color:red;background-color: white;}
+
 .dropdown-menu .textControl:hover img{
     transform: scale(1.0);
     background-color: rgb(248, 249, 250);
