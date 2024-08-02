@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'aAstagaDragon'; /* Name your font family */
-    src: url('public/aAstagaDragon.ttf'); /* Locate the .ttf file within your directory*/
+    src: url('aAstagaDragon.ttf'); /* Locate the .ttf file within your directory*/
   }
 .textControl{
     font-family: 'aAstagaDragon', sans-serif;
