@@ -32,50 +32,6 @@ body, html {
     margin: 0;
 }
 
-/* add 3-Aug-2024 */
-.buddha{
-    height: 60px;
-    width: 60px;
-    background-image: url('https://cdn.pixabay.com/photo/2023/06/21/06/51/buddha-8078673_960_720.jpg');
-    background-size: cover;
-}
-.hurjun99{
-    height: 60px;
-    width: 60px;
-    background-image: url('https://i.ibb.co/pLYzVB4/Hur-Jun-1999.jpg');
-    background-size: cover;
-}
-.detectivedi2{
-  height: 60px;
-  width: 60px;
-  background-image: url('https://i.ibb.co/HGLy3Kd/Amazing-Detective-Di-Renjie-2.jpg');
-  background-size: cover;
-}
-.detectivedi3{
-  height: 60px;
-  width: 60px;
-  background-image: url('https://i.ibb.co/qW14THn/Amazing-Detective-Di-Renjie-3.jpg');
-  background-size: cover;
-}
-.jumong{
-  height: 60px;
-  width: 60px;
-  background-image: url('https://i.ibb.co/LNSjLmY/jumong.jpg');
-  background-size: cover;
-}
-
-.sangdo{
-  height: 60px;
-  width: 60px;
-  background-image: url('https://i.ibb.co/fk3WVyK/Sangdo-Merchants-of-Joseon.jpg');
-  background-size: cover;
-}
-.kimsuro{
-  height: 60px;
-  width: 60px;
-  background-image: url('https://i.ibb.co/DLWLrq2/kimsuro.jpg');
-  background-size: cover;
-}
 .yisan{
   height: 60px;
   width: 60px;
