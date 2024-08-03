@@ -126,7 +126,7 @@ body, html {
 }
 
 /* Optional: Adjust sidebar width for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
             .sidebar {
                 width: 100%;
                 transform: translateX(-100%);
