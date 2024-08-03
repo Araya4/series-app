@@ -1,0 +1,135 @@
+.fi{
+    width: 30px;
+    height: 20px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 62.50%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 95%;
+    height: 95%;
+  }
+
+/*
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-top: -0.5rem;
+}
+    */
+/* add */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid {
+    display: flex;
+    height: 100vh;
+}
+.fa-headphones{
+    height: 50px;
+    width: auto;
+}
+.sidebar {
+    width: 150px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.main-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.imgControl img{
+    height: 50px;
+    width: auto;
+
+}
+
+/* add 3-Aug-2024 */
+.buddha{
+    height: 50px;
+    width: 50px;
+    background-image: url('https://cdn.pixabay.com/photo/2023/06/21/06/51/buddha-8078673_960_720.jpg');
+    background-size: cover;
+}
+.hurjun99{
+    height: 50px;
+    width: 50px;
+    background-image: url('https://i.ibb.co/pLYzVB4/Hur-Jun-1999.jpg');
+    background-size: cover;
+}
+.detectivedi2{
+  height: 50px;
+  width: 50px;
+  background-image: url('https://i.ibb.co/HGLy3Kd/Amazing-Detective-Di-Renjie-2.jpg');
+  background-size: cover;
+}
+.detectivedi3{
+  height: 50px;
+  width: 50px;
+  background-image: url('https://i.ibb.co/qW14THn/Amazing-Detective-Di-Renjie-3.jpg');
+  background-size: cover;
+}
+.jumong{
+  height: 50px;
+  width: 50px;
+  background-image: url('https://i.ibb.co/LNSjLmY/jumong.jpg');
+  background-size: cover;
+}
+
+.sangdo{
+  height: 50px;
+  width: 50px;
+  background-image: url('https://i.ibb.co/fk3WVyK/Sangdo-Merchants-of-Joseon.jpg');
+  background-size: cover;
+}
+.kimsuro{
+  height: 50px;
+  width: 50px;
+  background-image: url('https://i.ibb.co/DLWLrq2/kimsuro.jpg');
+  background-size: cover;
+}
+.yisan{
+  height: 50px;
+  width: 50px;
+  background-image: url('https://i.ibb.co/q9DccPD/yi-san.jpg');
+  background-size: cover;
+}
+.btn-group{
+  width: 100%;
+}
+
+/* Optional: Adjust sidebar width for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+}
