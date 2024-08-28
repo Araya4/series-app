@@ -3,42 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Series KR | IND</title>
+    <title>Carousel with Indicators</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles1.css">
-</head>
-<body>
-    <div class="container">
-        <div class="btn-group">
-
-            <button class="btn btn-light yisan" value="PLOBbhydezQbek3PJDx0tTiexzeMWly2JO" onclick="handleClicked(this.value)"></button>
-
- 
-        </div>
-        <div class="btn-group">
-            <button class="btn btn-success" value="PLEiEAq2VkUUK0XdlDw_VaLZe54gPTaY8B" onclick="handleClicked(this.value)">Tensorflow</button>
-            <button class="btn btn-success" value="PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV" onclick="handleClicked(this.value)">MMDS</button>
-            <button class="btn btn-success" value="PLD63A284B7615313A" onclick="handleClicked(this.value)">CS156</button>
-            <button class="btn btn-success" value="PLzERW_Obpmv9-3dnYYYG639X6QiRF4Zp_" onclick="handleClicked(this.value)">CPSC540</button>
-            <button class="btn btn-success" value="PLOU2XLYxmsII9mzQ-Xxug4l2o04JBrkLV" onclick="handleClicked(this.value)">ML foundation</button>
-        </div>
-
-
-    </div>
-    <div class="video-container">
-        <iframe id="content" src="https://www.youtube.com/embed/pi0ZwUAi6Xs" frameborder="0"></iframe>
-    </div>
-     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script>
-        const contentDiv = document.getElementById("content");
-        function handleClicked(val){
-            contentDiv.src = `https://www.youtube.com/embed/videoseries?list=${val}`;
+    <style>
+        body{
+            font-family: "Kanit", sans-serif;
         }
 
-    </script>
+        .video-container {
+            position: relative; /* Required for absolute positioning of the iframe */
+            width: 90%; /* Set the desired width */
+            padding-top: 62.5%; /* 4:3 Aspect Ratio (3 / 4 = 0.75 or 75%) */
+            margin: 0 auto; /* Center the container horizontally */
+            overflow: hidden; /* Hide anything outside the container */
+          }
+        
+          /* Style for the iframe */
+          .video-container iframe {
+            position: absolute; /* Position the iframe absolutely within the container */
+            top: 10%;
+            left: 0%;
+            width: 100%; /* Make iframe fill the container */
+            height: 100%; /* Make iframe fill the container */
+            overflow: hidden;
+            display: block;
+          }
+        
+          @media (max-width: 768px) {
+            .video-container {
+                padding-top: 62.5%; /* 4:3 Aspect Ratio */
+            }
+            .carousel-indicators li {
+                width: 12px; /* Size of dots */
+                height: auto;
+                border-radius: 50%;
+                background-color: cadetblue;
+            }
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 20%;
+            margin: 0 auto;
+
+        }
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 100%; /* Adjust this width if needed */
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+        .carousel-indicators {
+            bottom: -50px; /* Adjust bottom position of dots */
+   
+        }
+        .carousel-indicators li {
+            width: 15px; /* Size of dots */
+            height: 15px; /* Size of dots */
+            background-color: rgb(82, 188, 229);
+        }
+        .carousel-indicators .active {
+            background-color: blue; /* Color of the active dot */
+        }
+        .carousel-control-prev-icon , .carousel-control-next-icon{
+            background-color: black;
+            color:white;
+        }
+        .header{
+
+            font-size: 1.3rem;
+            color:cadetblue;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">หมอหลวง</div>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li id=0 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li id=1 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li id=2 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li id=3 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li id=4 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li id=5 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li id=6 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li id=7 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li id=8 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li id=9 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            <li id=10 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+            <li id=11 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+            <li id=12 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+            <li id=13 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+            <li id=14 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+            <li id=15 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+            <li id=16 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+            <li id=17 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+            <li id=18 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+            <li id=19 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+            <li id=20 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+            <li id=21 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="21"></li>
+            <li id=22 onclick="handleContent(this.id)" data-target="#carouselExampleIndicators" data-slide-to="22"></li>
+            
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 1
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 2
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 3
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 4
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 5
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 6
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 7
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 8
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 9
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 10
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 11
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 12
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 13
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 14
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 15
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 16
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 17
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 18
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 19
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 20
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 21
+            </div>
+            <div class="carousel-item">
+                ตอนที่ 22 จบ
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container" >
+        
+        <iframe id="myVideo" src="https://placehold.co/128x72/cadetblue/wheat?text=home" frameborder="0"></iframe>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
