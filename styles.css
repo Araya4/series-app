@@ -1,0 +1,77 @@
+body{
+    font-family: "Kanit", sans-serif;
+}
+
+.video-container {
+    position: relative; /* Required for absolute positioning of the iframe */
+    width: 90%; /* Set the desired width */
+    padding-top: 62.5%; /* 4:3 Aspect Ratio (3 / 4 = 0.75 or 75%) */
+    margin: 15% auto; /* Center the container horizontally */
+    overflow: hidden; /* Hide anything outside the container */
+  }
+
+  /* Style for the iframe */
+  .video-container iframe {
+    position: absolute; /* Position the iframe absolutely within the container */
+    top: 0%;
+    left: 0%;
+    width: 100%; /* Make iframe fill the container */
+    height: 100%; /* Make iframe fill the container */
+    overflow: hidden;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .video-container {
+        padding-top: 62.5%; /* 4:3 Aspect Ratio */
+    }
+    .carousel-indicators li {
+        width: 15px; /* Size of dots */
+        height: auto;
+        border-radius: 50%;
+        background-color: cadetblue;
+    }
+}
+
+.carousel-inner {
+    display: flex;
+    width: 20%;
+    margin: 0 auto;
+
+}
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%; /* Adjust this width if needed */
+    color:cadetblue;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.carousel-indicators {
+    bottom: -80px; /* Adjust bottom position of dots */
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.carousel-indicators li {
+    width: 15px; /* Size of dots */
+    height: 15px; /* Size of dots */
+    background-color: rgb(82, 188, 229);
+    color:black;
+}
+.carousel-indicators .active {
+    background-color: blue; /* Color of the active dot */
+}
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    background-color: black;
+    color:white;
+}
+.header{
+
+    font-size: 1.3rem;
+    color:cadetblue;
+    font-weight: bolder;
+    text-align: center;
+}
